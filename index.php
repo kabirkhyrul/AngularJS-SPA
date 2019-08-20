@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"> 
-<title>Room Management System</title>  
+<title>Room Booking System</title>  
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
 
@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row" style="background-color: #53a1ab;height: 100px;color:white;font-size: 56px;text-shadow: 1px 2px 3px black;">
         <img src="pacific-logo.jpg" align="center" alt="" style="width: auto;height: 100px;">
-        Room Booking Management
+        Room Booking System
     </div>
 	
 	<div class="row" ng-app="hotelapp" ng-controller="controller" ng-init="show_data()" style="padding-top: 10px;padding-bottom: 25px;">
