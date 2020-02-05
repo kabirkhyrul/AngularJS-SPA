@@ -1,5 +1,5 @@
 <?php
-$cn = new mysqli("localhost", "root", "", "hotel_managment");
+include_once('db.php');
 $output = array();
 $query  = "SELECT * FROM room_info";
 $send = $cn->query($query);

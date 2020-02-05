@@ -1,5 +1,5 @@
 <?php
-$cn = new mysqli("localhost", "root", "", "hotel_managment");
+require_once('db.php');
 $info = json_decode(file_get_contents("php://input"));
 
 $name     = $cn->real_escape_string($info->name);
@@ -20,7 +20,7 @@ if ($btn_name == "Insert") {
 if ($btn_name == 'Update') {
     $id    = $info->id;
 
-    echo $query = "UPDATE `room_info` SET `name` = '$name', `book` = '$book',  `nid` = '$nid', `checkout` = '$checkout', `room`='$room'  WHERE `room_info`.`id` =".$id;
+    $query = "UPDATE `room_info` SET `name` = '$name', `book` = '$book',  `nid` = '$nid', `checkout` = '$checkout', `room`='$room'  WHERE `room_info`.`id` =".$id;
     if (mysqli_query($cn, $query)) {
         echo 'Data Updated Successfully';
     } else {
@@ -28,5 +28,3 @@ if ($btn_name == 'Update') {
         
     }
 }
-
-?>

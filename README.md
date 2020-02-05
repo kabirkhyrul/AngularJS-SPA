@@ -22,4 +22,4 @@ RDBMS
 </ul>
 
 ## Demo
-https://www.kabir.infantinventory.com/ngSpa/
+http://www.khyrulkabir.tk/ngSpa/
